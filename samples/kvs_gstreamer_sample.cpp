@@ -491,6 +491,9 @@ void kinesis_video_init(CustomData *data) {
     } else {
         defaultRegionStr = string(defaultRegion);
     }
+    
+    defaultRegionStr = "ap-south-1";
+    
     LOG_INFO("Using region: " << defaultRegionStr);
 
     if (nullptr != (accessKey = getenv(ACCESS_KEY_ENV_VAR)) &&
